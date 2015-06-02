@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <body>
+
+<div ng-app="" ng-init="quantity=1;cost=5;person={firstName:'John',lastName:'Doe'};points=[1,15,19,2,40]">
+    <p>My first expression: {{ 5 + 5 }}</p>
+    <p>Total in dollar: {{ quantity * cost }}</p>
+    <p>Total in dollar: <span ng-bind="quantity*cost"></span></p>
+    <p>The name is {{person.firstName}}</p>
+    <p>The third point is {{points[2]}}</p>
+</div>
+
 
 </body>
 </html>
